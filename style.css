@@ -1,0 +1,268 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #2F2A26;
+    color: #ECE7E1;
+}
+
+
+/* ---------- Navbar ---------- */
+
+.navbar {
+    background: #3A332E !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+}
+
+.navbar-brand {
+    color: #D6B98C !important;
+    font-size: 28px;
+}
+
+.nav-link {
+    color: #ECE7E1 !important;
+    margin-left: 18px;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: #D6B98C !important;
+}
+
+
+/* ---------- Hero ---------- */
+
+section {
+    padding: 80px 0;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #F5F1EC;
+}
+
+h2 {
+    color: #D6B98C;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+p {
+    color: #D4C8BD;
+    line-height: 1.8;
+}
+
+
+/* ---------- Profile ---------- */
+
+.profile-img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #B8956A;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+    transition: .4s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+
+/* ---------- Buttons ---------- */
+
+.btn-primary {
+    background: #A67C52 !important;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #8D6744 !important;
+}
+
+.btn-outline-light {
+    border: 2px solid #B8956A;
+    color: #D6B98C;
+}
+
+.btn-outline-light:hover {
+    background: #B8956A;
+    color: #2F2A26;
+}
+
+
+/* ---------- Cards ---------- */
+
+.card {
+    background: #3A332E;
+    border: none;
+    border-radius: 18px;
+    color: white;
+    transition: .35s;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .18);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h4 {
+    color: #D6B98C;
+}
+
+.card p {
+    color: #D8CDC3;
+}
+
+
+/* ---------- Contact ---------- */
+
+.btn-dark {
+    background: #4A4038;
+    border: none;
+}
+
+.btn-dark:hover {
+    background: #5C4E45;
+}
+
+
+/* ---------- Popup ---------- */
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .55);
+    z-index: 999;
+}
+
+.popup-box {
+    width: 400px;
+    background: #3A332E;
+    margin: 8% auto;
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .30);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #D6B98C;
+}
+
+.popup-box h3 {
+    color: #D6B98C;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popup-box input,
+.popup-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: #ECE7E1;
+    color: #2F2A26;
+    outline: none;
+}
+
+.popup-box textarea {
+    resize: none;
+    height: 120px;
+}
+
+.popup-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #A67C52;
+    color: white;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.popup-box button:hover {
+    background: #8D6744;
+}
+
+#error {
+    display: none;
+    background: #8A4F44;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    background: #3A332E;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #CDBFB2;
+}
+
+
+/* ---------- Scrollbar ---------- */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #A67C52;
+    border-radius: 20px;
+}
+
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px) {
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+    .popup-box {
+        width: 90%;
+    }
+    h1 {
+        text-align: center;
+        font-size: 35px;
+    }
+    p {
+        text-align: center;
+    }
+    section {
+        padding: 60px 0;
+    }
+}
